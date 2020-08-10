@@ -1,0 +1,59 @@
+import random
+print("rock paper scissor")
+print("1 - rock")
+print("2 - paper")
+print("3 - scissor")
+play = int(input("let's play: "))
+system = dict()
+lst = list()
+lst.append(1)
+lst.append(2)
+lst.append(3)
+if play >= 4:
+    print("invalid input")
+    exit()
+if play == 1:
+    plr = ("rock")
+elif play == 2:
+    plr = ("paper")
+elif play == 3:
+    plr = ("scissor")
+print("your choice:",plr)
+stm = random.choice(lst)
+if stm == 1:
+    sym = ("rock")
+elif stm == 2:
+    sym = ("paper")
+elif stm == 3:
+    sym = ("scissor")
+print("system choice: ",sym)
+if plr == sym:
+    print("draw")
+    print("play again ?")
+elif play == 1 and stm == 2:
+    print("lost")
+    print("better luck next time")
+elif play == 2 and stm == 1:
+    print("won")
+    print("congratz,wanna play again?")
+elif play == 1 and stm == 3:
+    print("won")
+    print("congratz,wanna play again?")
+elif play == 3 and stm == 1:
+    print("lost")
+    print("better luck next time")
+elif play == 2 and stm == 3:
+    print("lost")
+    print("better luck next time")
+elif play == 3 and stm == 2:
+    print("won")
+    print("congratz,wanna play again?")
+else:
+    print("invalid input")
+
+
+
+
+
+
+
