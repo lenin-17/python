@@ -1,0 +1,26 @@
+print("py.simple calculator")
+print ("choose among these")
+print("1 = +")
+print("2 = -")
+print("3 = *")
+print("4 = /")
+what = int(input("what do you want to do ?"))
+fvalue = int(input("enter the first number"))
+svalue = int(input("enter the second value"))
+if what == 1:
+    add = fvalue + svalue
+    print(add)
+elif what == 2:
+    sub = fvalue - svalue
+    print(sub)
+elif what == 3:
+    multi = fvalue * svalue
+    print(multi)
+elif what == 4:
+    div = fvalue / svalue
+    print(div)
+else:
+    print("invalid input")
+
+
+
