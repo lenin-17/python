@@ -1,0 +1,5 @@
+import random
+numbers = ("0123456789")
+length = 4
+otp = "".join(random.sample(numbers,length))
+print("OTP:",otp)
